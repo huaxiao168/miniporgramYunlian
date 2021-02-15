@@ -1,0 +1,6 @@
+<template name="testTmplt">
+    <view wx:for="{{objArr}}" wx:key="name">
+        <view>name:{{item.name}}</view>
+        <view>age:{{item.age}}</view>
+    </view>
+</template>>

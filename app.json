@@ -1,0 +1,19 @@
+{
+  "pages":[
+    "pages/home/home",
+    "pages/index/index",
+    "pages/tmplate/tmplate",
+    "pages/logs/logs"
+  ],
+  "window":{
+    "backgroundTextStyle":"light",
+    "navigationBarBackgroundColor": "#fff",
+    "navigationBarTitleText": "工业云联",
+    "navigationBarTextStyle":"black"
+  },
+  "style": "v2",
+  "sitemapLocation": "sitemap.json",
+  "useExtendedLib":{
+    "weui": true
+    }
+}
