@@ -1,0 +1,41 @@
+<mp-navigation-bar loading="{{loading}}" 
+    show="{{show}}" animated="{{animated}}" 
+    color="{{color}}" background="{{background}}"
+    title="练习页" back="{{false}}">
+</mp-navigation-bar>
+<view class="page">
+    <view class="page_hd">
+        <view class="page_title">Navigation</view>
+        <view class="page_desc">小程序自定义导航栏</view>
+    </view>
+    <view class="page_bd page_bd_spacing">
+        <button class="weui-btn" type="primary" bindtap="toggleLoading">触发loading</button>
+        <button class="weui-btn" type="primary" bindtap="changeColor">修改文字颜色</button>
+        <button class="weui-btn" type="primary" bindtap="changeBgColor">修改背景颜色</button>
+        <button class="weui-btn" type="primary" bindtap="toggleShow">显示/隐藏</button>
+        <button class="weui-btn" type="primary" bindtap="toggleAnimated">设置显示/隐藏opacity动画</button>
+
+        <button class="weui-btn" type="primary" bindtap="openHalfScreen">OpenHalfScreenDialog</button>
+        <button class="weui-btn" type="warn" bindtap="openActionSheet">OpenActionSheet</button>  
+        <button class="btn" id="btnToIconPage" bindtap="onNavigateTap">跳转图标</button>
+          <!--WXML示例代码-->
+     
+        <mp-half-screen-dialog 
+            bindbuttontap="buttontapHalfScreen"
+            close="closeHalfScreen"
+            show="{{showHalfScreen}}"
+            maskClosable="{{false}}" 
+            title="测试标题B" 
+            subTitle="测试标题B的副标题"
+            desc="辅助描述内容，可根据实际需要安排"
+            tips="辅助提示内容，可根据实际需要安排"
+            buttons="{{buttonsHalfScreen}}">
+        </mp-half-screen-dialog> 
+        <mp-actionSheet bindactiontap="btnActionSheetClick"
+            show="{{showActionSheet}}"
+            actions="{{actionSheetGroups}}"
+            title="这是ActionSheet标题，-----------------------------------------------------可以为一行或者两行。">
+        </mp-actionSheet>
+    </view>
+
+</view>

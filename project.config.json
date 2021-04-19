@@ -1,5 +1,7 @@
 {
   "description": "项目配置文件",
+  "miniprogramRoot":"miniprogram/",
+  "cloudfunctionRoot": "cloudfunctions/",
   "packOptions": {
     "ignore": []
   },
@@ -37,7 +39,7 @@
     "useApiHostProcess": true
   },
   "compileType": "miniprogram",
-  "libVersion": "2.8.3",
+  "libVersion": "2.15.0",
   "appid": "wx94d7cf9be76c4e75",
   "projectname": "IIyunLian",
   "debugOptions": {
@@ -47,6 +49,7 @@
   "isGameTourist": false,
   "simulatorType": "wechat",
   "simulatorPluginLibVersion": {},
+  "cloudfunctionTemplateRoot": "cloudfunctionTemplate",
   "condition": {
     "search": {
       "list": []

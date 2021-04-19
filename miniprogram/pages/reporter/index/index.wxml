@@ -1,0 +1,42 @@
+<view class="page">
+    <view class="pagetabs">
+        <view class='tabs-box'>
+            <block wx:for="{{['待收货','待取货','已完成','已关闭']}}" wx:key="index">
+                <view class="tabs-item {{currentTabIndex == index ? 'selected' : '' }}"
+                    bindtap='onTabsItemTap'
+                    data-index='{{index}}'>
+                    {{item}}      
+                </view>
+            </block>
+        </view>
+            <scroll-view hidden='{{currentTabIndex != 0}}' scroll-y="true" style="height:900rpx;">
+                 <block wx:for="{{list}}" wx:key="index">
+                    <!-- 包裹图片+两行文字 id="{{index}}"是给按下了那个item记录-->
+                    <view class="view_tupian_wenzi" bindtap="cardClick" id="{{index}}">
+                        <!-- <image class="image_1" src="../images/main_geren.png" /> -->
+                        <mp-icon icon="tag" type="field" color="green" size="{{20}}" slot="icon" style="padding-right:15rpx;width:100rpx;height:100rpx;" ></mp-icon>
+                        <!-- 包裹两行文字 -->
+                        <view class="view_wenzi2">
+                            <text>{{item.name}}</text>
+                            <text class="text_small">{{item.content}}</text>
+                        </view>
+                    </view>
+                </block>
+            </scroll-view>
+            <view hidden='{{currentTabIndex != 1}}'>
+                <mp-searchbar bindselectresult="selectResult" search="{{search}}"></mp-searchbar>
+            </view>
+            <scroll-view hidden='{{currentTabIndex != 2}}' style="height:1000rpx;">
+                <icon class="icon-box-img" type="success" size="93"></icon>
+                <button class="btn" type="primary" bindtap="testcallCloudFunction">
+                    已完成页面
+                </button>
+                <mp-toptips msg="{{error}}" type="error" show="{{error}}"></mp-toptips>
+            </scroll-view>
+            <view hidden='{{currentTabIndex != 3}}'>
+                <icon class="icon-small" type="cancel" size="23"></icon>
+            </view>
+        
+    </view>
+   
+  </view>

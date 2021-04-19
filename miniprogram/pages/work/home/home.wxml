@@ -1,0 +1,24 @@
+<!-- <view class="page">
+    <view class="page__hd">
+       
+    </view>
+    <view class="page__bd">
+        <view class="weui-btn-area">
+            <button id="btn-test1" class="weui-btn" type="primary" bindtap="openConfirm">
+                点我
+            </button>
+        </view>
+
+        <mp-dialog title="弹窗标题" 
+            show="{{dialogShow}}"
+            bindbuttontap="tapDialogButton" 
+            buttons="{{buttons}}">
+            <view>弹窗 test content</view>
+        </mp-dialog>
+
+        
+
+    </view>
+</view> -->
+<web-view src="https://www.robinfun.club:9001/main/works" />
+

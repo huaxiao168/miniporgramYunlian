@@ -1,0 +1,10 @@
+appid: "wx94d7cf9be76c4e75"
+event: {
+	testPara: "Robinfuck", 
+	userInfo: {
+		appId: "wx94d7cf9be76c4e75"
+		openId: "oJ9e65UP6BjyzR3Jerrbibn3D2rE"
+	}
+}
+openid: "oJ9e65UP6BjyzR3Jerrbibn3D2rE"
+unionid: ""

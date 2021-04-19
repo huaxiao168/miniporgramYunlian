@@ -1,0 +1,56 @@
+{
+  "pages":[
+    "pages/work/home/home",
+    "pages/reporter/index/index",
+    "pages/reporter/sumweek/sumweek",
+    "pages/logs/logs",
+    "pages/icons/icons",
+    "pages/exploration/index/index",
+    "pages/exploration/practise/practise",
+    "pages/exploration/mark-template/mark-template",
+    "pages/exploration/mark-query/mark-query",
+    "pages/setting/index/index",
+    "pages/setting/persional/persional",
+    "pages/setting/bind-company/bind-company",
+    "pages/setting/help/help",
+    "pages/setting/about/about",
+    "pages/setting/suggestion/suggestion",
+    "pages/setting/role-manage/role-manage",
+    "pages/setting/industry/industry"
+  ],
+  "window":{
+    "backgroundTextStyle":"light",
+    "navigationBarBackgroundColor": "#fff",
+    "navigationBarTitleText": "工业云联",
+    "navigationBarTextStyle":"black"
+  },
+  "tabBar":{
+    "list": [{
+      "pagePath":"pages/work/home/home",
+      "text":"工作",
+      "iconPath":"imgs/work.png",
+      "selectedIconPath":"imgs/work_select.png"
+    },{
+      "pagePath":"pages/reporter/index/index",
+      "text":"图表",
+      "iconPath":"imgs/graphics.png",
+      "selectedIconPath":"imgs/graphics_select.png"
+    },{
+      "pagePath":"pages/exploration/index/index",
+      "text":"标识",
+      "iconPath":"imgs/compass.png",
+      "selectedIconPath":"imgs/compass_select.png"
+    },{
+      "pagePath":"pages/setting/index/index",
+      "text":"设置",
+      "iconPath":"imgs/settings.png",
+      "selectedIconPath":"imgs/settings_select.png"
+    }]
+  },
+  "style": "v2",
+  "cloud": true,
+  "sitemapLocation": "sitemap.json",
+  "useExtendedLib":{
+    "weui": true
+  }
+}

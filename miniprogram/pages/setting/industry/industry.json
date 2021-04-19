@@ -1,0 +1,8 @@
+{
+    "navigationBarTitleText": "我的行业关注",
+    "usingComponents": {
+        "mp-icon": "weui-miniprogram/icon/icon",
+        "mp-vtabs": "@miniprogram-component-plus/vtabs",
+        "mp-vtabs-content": "@miniprogram-component-plus/vtabs-content"
+    }
+}

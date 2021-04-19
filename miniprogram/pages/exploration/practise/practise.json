@@ -1,0 +1,10 @@
+{
+    "usingComponents": {
+        "mp-navigation-bar": "weui-miniprogram/navigation-bar/navigation-bar",
+        "mp-toptips": "weui-miniprogram/toptips/toptips",
+        "mp-half-screen-dialog": "weui-miniprogram/half-screen-dialog/half-screen-dialog",
+        "mp-actionSheet": "weui-miniprogram/actionsheet/actionsheet",
+        "mp-icon": "weui-miniprogram/icon/icon"
+    },
+    "navigationStyle": "custom"
+}

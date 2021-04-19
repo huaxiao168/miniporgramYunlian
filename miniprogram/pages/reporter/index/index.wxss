@@ -1,0 +1,65 @@
+.pagetabs{
+    font-size: 28rpx;
+    height: 100%;
+    /* position:absolute; */
+}
+.tabs-box{
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    height: 80rpx;
+    line-height: 80rpx;
+    text-align: center
+}
+.tabs-item.selected {
+    color:#209948;
+    border-bottom:5rpx solid #209948;
+}
+.tabs-item {
+    width: 33.3%;
+    color:#666;
+    border-bottom:1rpx solid #e9e9e9;
+}
+
+/* 包裹图片和两行文字 */
+
+.view_tupian_wenzi {
+    height: 120rpx;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    
+    /* 圆角 */
+    border-radius: 20rpx;
+  
+    /* 边 */
+    border: 3rpx solid #E0E3DA;
+    box-shadow:5rpx 5rpx 5rpx 5rpx #E0E3DA;  /**阴影说明：分别是 x-坐标值；Y坐标值、模糊程度和颜色**/
+  
+    background-color: #ffffff;
+    margin: 30rpx;
+  
+    /* padding使得文字和图片不至于贴着边框 */
+    padding: 30rpx;
+  
+  }
+  /* 图片 */
+  
+  /* .image_1 {
+    width: 100rpx;
+    height: 100rpx;
+  } */
+  /* 包裹两行文字 */
+  .view_wenzi2 {
+    width: 100%;
+    margin-left: 25rpx;
+    display: flex;
+    flex-direction: column;
+  }
+  /* 小字 */
+  .text_small {
+    font-size: 30rpx;
+    word-break: break-all;
+    color: #7a7878;
+    margin-top: 10rpx
+  }

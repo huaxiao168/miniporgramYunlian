@@ -1,0 +1,19 @@
+<view class="page">
+    <view class="page_bd">
+        <mp-cells title="标识解析">
+            <mp-cell title="我的模板" link hover  url="../mark-template/mark-template">
+                <mp-icon icon="tag" type="field"  color="green" size="{{20}}" slot="icon" style="padding-right:15rpx;" ></mp-icon>
+                <view slot="footer">
+                    <view style="display: inline-block;vertical-align:middle; font-size: 15px;"></view>
+                    <mp-badge style="margin-left: 5px;margin-right: 5px;" ext-class="blue" content="9+"/>
+                </view>
+            </mp-cell>
+            <mp-cell title="标识查询" link hover  url="../mark-query/mark-query">
+                <mp-icon icon="qr-code" type="field" color="green" size="{{20}}" slot="icon" style="padding-right:15rpx;" ></mp-icon>
+                <view slot="footer">
+                    <view style="display: inline-block;vertical-align:middle; font-size: 15px;"></view>
+                </view>
+            </mp-cell>
+        </mp-cells>
+  </view>
+</view>

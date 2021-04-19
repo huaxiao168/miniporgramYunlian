@@ -1,0 +1,6 @@
+<view class="container">
+    <view>欢迎反馈，我们期待您的意见和建议</view>
+    <view>必填，请详细描述您对我们产品的意见，</view>
+    <view>联系手机号码</view>
+    <view>联系QQ</view>
+</view>
